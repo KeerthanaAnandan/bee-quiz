@@ -65,31 +65,31 @@ const numnumber = sessionStorage.getItem("number");
 let typo;
 
 if (
-  curlpoints > growthpoints ||
-  curlpoints > damagepoints ||
+  curlpoints > growthpoints &&
+  curlpoints > damagepoints &&
   curlpoints > moisturepoints
 ) {
   typo = "Curl Enhancing Box " + alphabet + numnumber;
 }
 
 if (
-  growthpoints > curlpoints ||
-  growthpoints > damagepoints ||
+  growthpoints > curlpoints &&
+  growthpoints > damagepoints &&
   growthpoints > moisturepoints
 ) {
   typo = "Growth/Length Retention Box " + alphabet + numnumber;
 }
 
 if (
-  damagepoints > curlpoints ||
-  damagepoints > growthpoints ||
+  damagepoints > curlpoints &&
+  damagepoints > growthpoints &&
   damagepoints > moisturepoints
 ) {
   typo = "Damage control box " + alphabet + numnumber;
 }
 if (
-  moisturepoints > curlpoints ||
-  moisturepoints > growthpoints ||
+  moisturepoints > curlpoints &&
+  moisturepoints > growthpoints &&
   moisturepoints > damagepoints
 ) {
   typo = "Moisture Box " + alphabet + numnumber;
