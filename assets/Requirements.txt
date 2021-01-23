@@ -1,6 +1,7 @@
 Client Name: Brittney_p
 Title:What Bee Natural Box is for you?
-
+mail: contact@beenaturalbox.com
+password : beenatural
 
 Hair Quiz Questions
 
