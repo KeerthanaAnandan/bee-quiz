@@ -4,42 +4,43 @@
     <title>What Bee Natural Box is for you?</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-    /*inputtttttttt radioooooo btnnnn*/
-input[type="radio"] {
-  display: none;
-}
-label {
-  display: flex;
+      /*inputtttttttt radioooooo btnnnn*/
+      input[type="radio"] {
+        display: none;
+      }
+      label {
+        display: flex;
+        width: 60%;
+        color: #2c2b28;
+        font-size: 30px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        align-items: center;
+        background-color: rgb(185, 236, 236);
+        cursor: pointer;
+      }
 
-  color: #2c2b28;
-  font-size: 30px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 10px;
-  align-items: center;
-  cursor: pointer;
-}
-
-label:before {
-  content: "";
-  height: 30px;
-  width: 30px;
-  border: 3px solid #000;
-  border-radius: 50%;
-  margin-right: 20px;
-  cursor: pointer;
-}
-input[type="radio"]:checked + label {
-  background-color: rgb(255, 217, 0);
-  color: white;
-}
-input[type="radio"]:checked + label:before {
-  height: 16px;
-  width: 16px;
-  border: 10px solid white;
-  background-color: rgb(255, 217, 0);
-}
-</style>
+      label:before {
+        content: "";
+        height: 30px;
+        width: 30px;
+        border: 3px solid #000;
+        border-radius: 50%;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      input[type="radio"]:checked + label {
+        background-color: rgb(255, 217, 0);
+        color: white;
+      }
+      input[type="radio"]:checked + label:before {
+        height: 16px;
+        width: 16px;
+        border: 10px solid white;
+        background-color: rgb(255, 217, 0);
+      }
+    </style>
   </head>
   <body>
     <div id="container">
@@ -48,7 +49,6 @@ input[type="radio"]:checked + label:before {
         <!--<p>Test your knowledge about <strong>BANGTAN SONYEONTAN</strong></p>-->
       </header>
       <section>
-        <div id="results"></div>
         <form
           name="quizForm"
           class="fullform"
@@ -100,7 +100,7 @@ input[type="radio"]:checked + label:before {
           <input type="radio" name="q4" value="c" id="q4c" />
           <label for="q4c">Breakage</label><br />
           <input type="radio" name="q4" value="d" id="q4d" />
-           <label for="q4d">Lack of definition</label><br />
+          <label for="q4d">Lack of definition</label><br />
 
           <h3>5. What is your main hair goal?</h3>
           <input type="radio" name="q5" value="a" id="q5a" />
@@ -110,9 +110,12 @@ input[type="radio"]:checked + label:before {
           <input type="radio" name="q5" value="c" id="q5c" />
           <label for="q5c">Curl Definition/Volume </label><br />
           <input type="radio" name="q5" value="d" id="q5d" />
-           <label for="q5d">Recover from mechanical/ chemical damage</label><br />
+          <label for="q5d">Recover from mechanical/ chemical damage</label
+          ><br />
           <br /><br />
-          <input type="submit" value="Submit Answers" />
+          <button type="submit" class="btn-next">
+            Click here to select your box!
+          </button>
         </form>
       </section>
       <!-- <footer>

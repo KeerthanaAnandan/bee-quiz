@@ -6,7 +6,10 @@ const alphabet = sessionStorage.getItem("alphabet");
 const numnumber = sessionStorage.getItem("number");
 let mess;
 let typo;
-
+window.onload = () => {
+  sessionStorage.clear();
+};
+//curl
 if (
   curlpoints > growthpoints &&
   curlpoints > damagepoints &&
@@ -17,8 +20,8 @@ if (
     "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
   ];
 }
-
-if (
+//growth
+else if (
   growthpoints > curlpoints &&
   growthpoints > damagepoints &&
   growthpoints > moisturepoints
@@ -28,8 +31,8 @@ if (
     "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
   ];
 }
-
-if (
+//damage
+else if (
   damagepoints > curlpoints &&
   damagepoints > growthpoints &&
   damagepoints > moisturepoints
@@ -39,12 +42,83 @@ if (
     "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
   ];
 }
-if (
+//moisture
+else if (
   moisturepoints > curlpoints &&
   moisturepoints > growthpoints &&
   moisturepoints > damagepoints
 ) {
   typo = "Moisture Box " + alphabet + numnumber;
+  mess = [
+    "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
+  ];
+}
+
+//curl == growth = m
+if ((curlpoints == growthpoints) == moisturepoints) {
+  typo =
+    "Moisture Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Growth/Length Retention Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Curl Enhancing Box " +
+    alphabet +
+    numnumber;
+  mess = [
+    "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
+  ];
+} // m= c = d
+else if ((moisturepoints == curlpoints) == damagepoints) {
+  typo =
+    "Moisture Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Curl Enhancing Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Damage control box " +
+    alphabet +
+    numnumber;
+  mess = [
+    "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
+  ];
+} // c = g = d
+else if ((curlpoints == growthpoints) == damagepoints) {
+  typo =
+    "Curl Enhancing Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Growth/Length Retention Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Damage control box " +
+    alphabet +
+    numnumber;
+  mess = [
+    "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
+  ];
+} // g = d = m
+else if ((growthpoints == damagepoints) == moisturepoints) {
+  typo =
+    "Growth/Length Retention Box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Damage control box " +
+    alphabet +
+    numnumber +
+    "," +
+    "Moisture Box " +
+    alphabet +
+    numnumber;
   mess = [
     "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
   ];
