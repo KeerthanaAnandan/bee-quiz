@@ -1,6 +1,6 @@
 function submitAnswers(e) {
   e.preventDefault();
-  location.href = "end.html";
+  location.href = "form.html";
   var total = 5;
   var curlpoints = 0;
   var growthpoints = 0;

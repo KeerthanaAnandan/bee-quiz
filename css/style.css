@@ -4,7 +4,12 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 20px;
 }
-
+.imgbucket {
+  background-color: rgb(7, 6, 6);
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
 #container {
   width: 80%;
 
@@ -14,17 +19,27 @@ body {
 }
 
 #container h3 {
-  color: #000;
+  color: #fff;
   padding: 10px;
   margin: 10px;
   font-size: 35px;
 }
 
 .fullform {
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.fullform > h3 {
+  color: #000 !important;
+  font-family: "Roboto", sans-serif;
+}
+#moveup {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 header {
   text-align: center;
@@ -82,9 +97,6 @@ input[type="submit"] {
   color: #fff;
   opacity: 1 !important;
 }
-#imgcol {
-  color: #eb145c;
-}
 
 #namebox {
   padding: 10px;
@@ -107,12 +119,16 @@ input[type="submit"] {
 	background: url("../../assets/tennis.jpg") no-repeat center center/cover;
 	height: 900px;
   }*/
+#imgcol {
+  margin-bottom: -100px;
+}
+
 #showcase .showcase-content {
-  color: #000000;
+  color: #fff;
 
   text-align: center;
 
-  padding-top: 270px;
+  padding-top: 160px;
 
   font-family: "Roboto", sans-serif;
 }
@@ -129,10 +145,10 @@ input[type="submit"] {
 }
 
 .showcase-content .btn {
-  background: #000000;
+  background: #fdd20f;
   display: inline-block;
   font-size: 20px;
-  color: #ffffff;
+  color: #000;
   margin: 0.5rem;
   padding: 13px 20px;
   border: none;
@@ -145,7 +161,7 @@ input[type="submit"] {
 .showcase-content .btn:hover {
   background: transparent;
   border: 1px solid rgb(17, 16, 16);
-  color: rgb(24, 22, 22);
+  color: #fff;
 }
 
 /* --------x------ Site title --------x------- */

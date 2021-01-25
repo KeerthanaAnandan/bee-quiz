@@ -101,3 +101,4 @@ if (
 //document.querySelector(".msghere").innerHTML = ma
 document.querySelector(".usertype").value = typo;
 //document.querySelector(".usertype").style.display = "none";
+console.log(typo);

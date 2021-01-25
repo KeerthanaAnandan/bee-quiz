@@ -9,6 +9,7 @@
         display: none;
       }
       label {
+        font-family: "Roboto", sans-serif;
         display: flex;
         width: 60%;
         color: #2c2b28;
@@ -17,7 +18,7 @@
         border-radius: 5px;
         padding: 10px;
         align-items: center;
-        background-color: rgb(185, 236, 236);
+        background-color: #ffffff;
         cursor: pointer;
       }
 
@@ -44,10 +45,10 @@
   </head>
   <body>
     <div id="container">
-      <header>
-        <h1>What Bee Natural Box is for you?</h1>
-        <!--<p>Test your knowledge about <strong>BANGTAN SONYEONTAN</strong></p>-->
-      </header>
+      <!-- <header>
+        <h1 >What Bee Natural Box is for you?</h1>
+        <p>Test your knowledge about <strong>BANGTAN SONYEONTAN</strong></p>
+      </header>-->
       <section>
         <form
           name="quizForm"
@@ -69,6 +70,11 @@
           <label for="q1d">Color/Chemical Treatments</label><br />
 
           <h3>Q2. What is your hair porosity?</h3>
+          <span id="moveup"
+            >(Hair porosity is about your hair's ability to absorb and retain
+            moisture)</span
+          >
+
           <input type="radio" name="q2" value="a" id="q2a" /><label for="q2a"
             >Low</label
           ><br />
@@ -113,8 +119,7 @@
           <label for="q5d">Recover from mechanical/ chemical damage</label
           ><br />
           <br /><br />
-          <button type="submit" class="btn-next">See Results
-          </button>
+          <button type="submit" class="btn-next">See Results</button>
         </form>
       </section>
       <!-- <footer>
