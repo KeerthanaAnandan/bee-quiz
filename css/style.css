@@ -19,7 +19,7 @@ body {
 }
 
 #container h3 {
-  color: #fff;
+  color: #000;
   padding: 10px;
   margin: 10px;
   font-size: 35px;
@@ -33,10 +33,11 @@ body {
   justify-content: center;
 }
 .fullform > h3 {
-  color: #000 !important;
+  color: #fdd20f !important;
   font-family: "Roboto", sans-serif;
 }
 #moveup {
+  color: #fbcd18;
   margin-top: -20px;
   margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
@@ -119,16 +120,16 @@ input[type="submit"] {
 	background: url("../../assets/tennis.jpg") no-repeat center center/cover;
 	height: 900px;
   }*/
-#imgcol {
-  margin-bottom: -100px;
-}
 
 #showcase .showcase-content {
   color: #fff;
 
   text-align: center;
 
-  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   font-family: "Roboto", sans-serif;
 }
@@ -300,8 +301,8 @@ li {
 .btn-next {
   border: none;
   padding: 15px 35px;
-  background-color: #000000;
-  color: #fff;
+  background-color: #fbcd18;
+  color: #000;
   border-radius: 2px;
   transition: 0.4s all;
   font-size: x-large;
@@ -428,13 +429,13 @@ li {
   margin: auto;
 }
 .bucket {
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
 
   text-align: center;
-  margin: 2rem 5rem;
 
   /*margin: auto;
 	max-width: 1100px;
@@ -449,7 +450,6 @@ li {
 
   padding: 70px 40px;
   width: 80%;
-  margin-left: 5rem;
 
   font-family: "Roboto", sans-serif;
 
@@ -566,7 +566,14 @@ li {
 
 @media (max-width: 540px) {
   #showcase {
-    height: 800px;
+    height: 100vh;
+  }
+  #showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
   }
   #showcase .showcase-content h1 {
     font-size: 20px;
@@ -575,8 +582,22 @@ li {
   #showcase .showcase-content h2,
   #showcase .showcase-content h3 {
     font-size: 12px;
-    padding-bottom: 20px;
+
     line-height: 1.7em;
+  }
+  #container {
+    width: 100vw;
+
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+  }
+
+  #container h3 {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
   }
 
   #wrapper {
@@ -666,19 +687,20 @@ li {
     font-size: 16px;
   }
   .bucket {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
 
     text-align: center;
-    margin: 0.2rem 1rem;
 
     /*margin: auto;
 	  max-width: 1100px;
 	  overflow: auto;
 	  padding: 0 20px;*/
   }
+
   .tipsbucket {
     display: flex;
     flex-direction: column;
@@ -698,12 +720,20 @@ li {
 
     padding: 20px 50px;
     width: 80%;
-    margin-left: 2rem;
+
     font-size: 20px;
     line-height: 17px;
     font-family: "Roboto", sans-serif;
 
     border-radius: 10px;
+  }
+  #lasth4 {
+    font-size: small;
+  }
+  #headone {
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
   }
   .btn-primary {
     display: inline-block;

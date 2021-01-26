@@ -6,9 +6,9 @@ const alphabet = sessionStorage.getItem("alphabet");
 const numnumber = sessionStorage.getItem("number");
 let mess;
 let typo;
-window.onload = () => {
-  sessionStorage.clear();
-};
+//window.onload = () => {
+//sessionStorage.clear();
+//};
 //curl
 if (
   curlpoints > growthpoints &&
@@ -60,11 +60,11 @@ if ((curlpoints == growthpoints) == moisturepoints) {
     "Moisture Box " +
     alphabet +
     numnumber +
-    "," +
+    `<br />` +
     "Growth/Length Retention Box " +
     alphabet +
     numnumber +
-    "," +
+    `<br />` +
     "Curl Enhancing Box " +
     alphabet +
     numnumber;
@@ -73,18 +73,19 @@ if ((curlpoints == growthpoints) == moisturepoints) {
   ];
 } // m= c = d
 else if ((moisturepoints == curlpoints) == damagepoints) {
-  typo =
-    "Moisture Box " +
-    alphabet +
-    numnumber +
-    "," +
-    "Curl Enhancing Box " +
-    alphabet +
-    numnumber +
-    "," +
-    "Damage control box " +
-    alphabet +
-    numnumber;
+  typo = [
+    "Moisture Box" +
+      alphabet +
+      numnumber +
+      `<br />` +
+      "Curl Enhancing Box" +
+      alphabet +
+      numnumber +
+      `<br />` +
+      "Damage control box" +
+      alphabet +
+      numnumber,
+  ];
   mess = [
     "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
   ];
@@ -94,11 +95,11 @@ else if ((curlpoints == growthpoints) == damagepoints) {
     "Curl Enhancing Box " +
     alphabet +
     numnumber +
-    "," +
+    `<br />` +
     "Growth/Length Retention Box " +
     alphabet +
     numnumber +
-    "," +
+    `<br />` +
     "Damage control box " +
     alphabet +
     numnumber;
@@ -111,11 +112,11 @@ else if ((growthpoints == damagepoints) == moisturepoints) {
     "Growth/Length Retention Box " +
     alphabet +
     numnumber +
-    "," +
+    `<br />` +
     "Damage control box " +
     alphabet +
     numnumber +
-    "," +
+    `<br />` +
     "Moisture Box " +
     alphabet +
     numnumber;

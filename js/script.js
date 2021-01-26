@@ -1,6 +1,6 @@
 function submitAnswers(e) {
   e.preventDefault();
-  location.href = "form.html";
+
   var total = 5;
   var curlpoints = 0;
   var growthpoints = 0;
@@ -23,6 +23,8 @@ function submitAnswers(e) {
     if (eval("q" + i) == null || eval("q" + i) == "") {
       alert("You missed question " + i);
       return false;
+      //  } else if (eval("q" + i) != null || eval("q" + i) != "") {
+      // location.href = "form.html";
     }
   }
 
@@ -93,14 +95,15 @@ function submitAnswers(e) {
   }
 
   // Display Results(here return false is used inorder to avoid submitting again :>3 )
-  var results = document.getElementById("results");
-  results.innerHTML =
-    "<h3>You scored <span>" +
-    score +
-    "</span> out of <span>" +
-    total +
-    "</span></h3>";
+  // var results = document.getElementById("results");
+  //results.innerHTML =
+  //"<h3>You scored <span>" +
+  //score +
+  //"</span> out of <span>" +
+  //total +
+  //"</span></h3>";
   // alert("You scored " + score + " out of " + total);
 
   //return false;
+  location.href = "form.html";
 }

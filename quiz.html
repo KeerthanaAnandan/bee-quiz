@@ -4,6 +4,15 @@
     <title>What Bee Natural Box is for you?</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
+      #container {
+        background-image: url("assets/bg1.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        width: 100vw;
+      }
+
       /*inputtttttttt radioooooo btnnnn*/
       input[type="radio"] {
         display: none;
@@ -31,6 +40,7 @@
         margin-right: 20px;
         cursor: pointer;
       }
+
       input[type="radio"]:checked + label {
         background-color: rgb(255, 217, 0);
         color: white;
@@ -71,7 +81,7 @@
 
           <h3>Q2. What is your hair porosity?</h3>
           <span id="moveup"
-            >(Hair porosity is about your hair's ability to absorb and retain
+            >(Hair porosity is your hair's ability to absorb and retain
             moisture)</span
           >
 
@@ -108,7 +118,7 @@
           <input type="radio" name="q4" value="d" id="q4d" />
           <label for="q4d">Lack of definition</label><br />
 
-          <h3>5. What is your main hair goal?</h3>
+          <h3>Q5. What is your main hair goal?</h3>
           <input type="radio" name="q5" value="a" id="q5a" />
           <label for="q5a">Moisture</label><br />
           <input type="radio" name="q5" value="b" id="q5b" />
@@ -116,10 +126,11 @@
           <input type="radio" name="q5" value="c" id="q5c" />
           <label for="q5c">Curl Definition/Volume </label><br />
           <input type="radio" name="q5" value="d" id="q5d" />
-          <label for="q5d">Recover from mechanical/ chemical damage</label
-          ><br />
+          <label for="q5d">Recover mechanical/chemical damage</label><br />
           <br /><br />
-          <button type="submit" class="btn-next">See Results</button>
+          <button type="submit" class="btn-next" id="btn-next">
+            See Results
+          </button>
         </form>
       </section>
       <!-- <footer>
