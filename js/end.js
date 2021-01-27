@@ -37,7 +37,7 @@ else if (
   damagepoints > growthpoints &&
   damagepoints > moisturepoints
 ) {
-  typo = "Damage control box " + alphabet + numnumber;
+  typo = "Damage Control Box " + alphabet + numnumber;
   mess = [
     "Thank you for telling us more about your hair! This is the box we recommend for you based on your current hair goals and where you are at in your hair journey.",
   ];
@@ -82,7 +82,7 @@ else if ((moisturepoints == curlpoints) == damagepoints) {
       alphabet +
       numnumber +
       `<br />` +
-      "Damage control box" +
+      "Damage Control Box" +
       alphabet +
       numnumber,
   ];
@@ -100,7 +100,7 @@ else if ((curlpoints == growthpoints) == damagepoints) {
     alphabet +
     numnumber +
     `<br />` +
-    "Damage control box " +
+    "Damage Control Box " +
     alphabet +
     numnumber;
   mess = [
@@ -113,7 +113,7 @@ else if ((growthpoints == damagepoints) == moisturepoints) {
     alphabet +
     numnumber +
     `<br />` +
-    "Damage control box " +
+    "Damage Control Box " +
     alphabet +
     numnumber +
     `<br />` +
@@ -132,6 +132,6 @@ const msgme = document.querySelector(".msghere");
 msgme.className = "center-item";
 //document.querySelector(".msghere").innerHTML = mao;
 
-msgme.innerHTML = mao;
+//msgme.innerHTML = mao;
 //document.querySelector(".usertype").value = typo;
 //document.querySelector(".usertype").style.display = "none";

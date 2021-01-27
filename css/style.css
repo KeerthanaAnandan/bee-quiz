@@ -141,8 +141,8 @@ input[type="submit"] {
 #showcase .showcase-content h3 {
   font-size: 30px;
   padding-bottom: 20px;
-  line-height: 1.7em;
-  font-weight: lighter;
+
+  font-weight: bold;
 }
 
 .showcase-content .btn {
@@ -383,10 +383,16 @@ li {
 .footer-container {
   text-align: center;
 
-  margin-top: 130px;
+  background-color: rgb(7, 6, 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 .footer-container input[type="email"] {
-  width: 50%;
+  width: 100%;
   padding: 1.2rem;
   margin-bottom: 0.5rem;
   border-color: #000000;
@@ -394,7 +400,7 @@ li {
   border-width: 2px;
 }
 .footer-container input[type="text"] {
-  width: 50%;
+  width: 100%;
   padding: 1.2rem;
   margin-bottom: 0.5rem;
   border: 2px solid #000000;
@@ -403,11 +409,11 @@ li {
 	display: none;
   }*/
 .btn-primary {
-  background: #000000;
+  background: #fbcd18;
   display: inline-block;
   font-size: 20px;
-  color: #ffffff;
-  width: 40%;
+  color: #000;
+  width: auto;
   margin: 1.5rem;
   padding: 13px 20px;
   border: none;
@@ -419,7 +425,7 @@ li {
 .btn-primary:hover {
   background: transparent;
   border: 1px solid #2c2b28;
-  color: #2c2b28;
+  color: white;
 }
 
 .footer-container input[type="submit"] {
@@ -444,7 +450,7 @@ li {
 }
 
 #showcas .showcase-content {
-  color: #000000;
+  color: #fff;
 
   text-align: center;
 
@@ -582,8 +588,6 @@ li {
   #showcase .showcase-content h2,
   #showcase .showcase-content h3 {
     font-size: 12px;
-
-    line-height: 1.7em;
   }
   #container {
     width: 100vw;
@@ -680,11 +684,13 @@ li {
   .footer-container input[type="submit"] {
     width: 70%;
   }
-  .footer-container h2 {
-    font-size: 10px;
-  }
+
   #showcas .showcase-content h1 {
-    font-size: 16px;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  #showcas .showcase-content h2 {
+    font-size: 17px;
   }
   .bucket {
     display: flex;
@@ -714,7 +720,7 @@ li {
   }
 
   #showcas .showcase-content {
-    color: #000;
+    color: #fff;
 
     text-align: center;
 
@@ -733,7 +739,6 @@ li {
   #headone {
     font-size: 50px;
     font-weight: bolder;
-    font-style: italic;
   }
   .btn-primary {
     display: inline-block;
@@ -760,8 +765,6 @@ li {
   }
   .footer-container {
     text-align: center;
-
-    margin-top: 130px;
   }
   .footer-container input[type="email"] {
     width: 50%;
