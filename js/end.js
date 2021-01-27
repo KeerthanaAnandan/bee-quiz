@@ -6,9 +6,9 @@ const alphabet = sessionStorage.getItem("alphabet");
 const numnumber = sessionStorage.getItem("number");
 let mess;
 let typo;
-//window.onload = () => {
-//sessionStorage.clear();
-//};
+window.onload = () => {
+  sessionStorage.clear();
+};
 //curl
 if (
   curlpoints > growthpoints &&

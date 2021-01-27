@@ -1,3 +1,6 @@
+window.onload = () => {
+  sessionStorage.clear();
+};
 function submitAnswers(e) {
   e.preventDefault();
 
@@ -6,10 +9,6 @@ function submitAnswers(e) {
   var growthpoints = 0;
   var damagepoints = 0;
   var moisturepoints = 0;
-
-  window.onload = () => {
-    sessionStorage.clear();
-  };
 
   // Get User Input
   var q1 = document.forms["quizForm"]["q1"].value;
