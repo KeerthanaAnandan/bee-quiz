@@ -94,6 +94,63 @@ if (
 ) {
   typo = "Moisture Box " + alphabet + numnumber;
 }
+//curl == growth = m
+if ((curlpoints == growthpoints) == moisturepoints) {
+  typo =
+    "Moisture Box " +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Growth/Length Retention Box " +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Curl Enhancing Box " +
+    alphabet +
+    numnumber;
+} // m= c = d
+else if ((moisturepoints == curlpoints) == damagepoints) {
+  typo =
+    "Moisture Box" +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Curl Enhancing Box" +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Damage Control Box" +
+    alphabet +
+    numnumber;
+} // c = g = d
+else if ((curlpoints == growthpoints) == damagepoints) {
+  typo =
+    "Curl Enhancing Box " +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Growth/Length Retention Box " +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Damage Control Box " +
+    alphabet +
+    numnumber;
+} // g = d = m
+else if ((growthpoints == damagepoints) == moisturepoints) {
+  typo =
+    "Growth/Length Retention Box " +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Damage Control Box " +
+    alphabet +
+    numnumber +
+    `<br />` +
+    "Moisture Box " +
+    alphabet +
+    numnumber;
+}
 
 //document.querySelector(".headmsg").innerHTML = typo;
 //const msgme = document.querySelector(".msghere");
