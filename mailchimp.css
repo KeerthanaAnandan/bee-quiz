@@ -4,21 +4,42 @@ body{
 #hide{
   display:none;
 }
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+  /* #navbar {
+  
+  margin: 5px;
+}   */
+.logo > img{
+  align-items: center;
+  width: 300px !important;
+  /* height: 200px !important; */
+ /* width: 100px !important; */
+ 
+
+}
 .wrapthat{
   position: relative;
   display: grid;
   grid-template-rows: 60px auto;
   width: 800px;
-  height: 600px;
+  height: 620px;
   background-color: #b49c39;;
   margin:  auto;
-  margin-top: 0 !important;
+  color: #fff;
+  
 }
 
 .card{
   background-color: #202020;
+  color:#fff !important;
   width: 600px;
-  height: 500px;
+  height: 550px;
   margin: auto;
   margin-top: 30px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
@@ -46,7 +67,7 @@ form input {
   height: 50px;
 border-radius: 3px;
   background: white;
-  color: grey;
+  color: #000;
   transition: 0.5s;
   margin: auto;
 }
@@ -63,7 +84,7 @@ input::placeholder{
 form label {
   display: flex;
  flex-direction: row;
-  color: grey;
+  color: #fff;
   font-weight: bold;
   margin-left:8%;
   text-align: center;
@@ -78,10 +99,10 @@ form .button {
   justify-content: center;
   max-width: 270px;
   height: 50px;
-  background: #fbcd18;;
+  background: #fbcd18;
  border: none;
   border-radius: 7px;
-  color: #fff;
+  color: #000;
   font-size:x-large;
   line-height: normal;
 margin:auto;
@@ -91,9 +112,9 @@ font-family: 'Montserrat', sans-serif;
 
 form .button:hover {
   background:  transparent;
-color:#b34f66;
+color:#fbcd18;
   cursor: pointer;
-  border: 1px solid #C65670;
+  border: 1px solid #fbcd18;
 }
 
 /* Mailchimp CSS */
@@ -186,16 +207,25 @@ form label .asterisk {
     margin: none !important;
    
     width: 100vw !important;
-    height: 650px !important;
+    height: 700px !important;
   }
 
   .footer-container{
-    height:100vh;
+    height:120vh;
+  }
+
+  .logo > img{
+    align-items: center;
+    width: 150px !important;
+    /* height: 200px !important; */
+   /* width: 100px !important; */
+   
+  
   }
   .card{
  
     width: 350px;
-    height: 600px;
+    height: 620px;
     margin: auto;
     margin-top: 30px;
 
