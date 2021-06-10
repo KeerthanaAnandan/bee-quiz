@@ -38,7 +38,7 @@ body{
 .card{
   background-color: #202020;
   color:#fff !important;
-  width: 600px;
+  width: 620px;
   height: 550px;
   margin: auto;
   margin-top: 30px;
@@ -224,25 +224,25 @@ form label .asterisk {
   }
   .card{
  
-    width: 350px;
+    width: 300px;
     height: 620px;
     margin: auto;
     margin-top: 30px;
 
-    
+    font-size: 10px;
   }
   .texts{
-    font-size: small;
+    font-size: 9px;
     line-height: 20px;
   }
  
   form input {
     display: flex;
     flex-direction: row;
-    width: 300px !important;
-    padding: 15px;
+    width: 250px !important;
+    padding: 10px;
     border: none;
-    height: 40px;
+    height: 30px;
 
    
     transition: 0.5s;
