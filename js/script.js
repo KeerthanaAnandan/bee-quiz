@@ -104,5 +104,5 @@ function submitAnswers(e) {
   // alert("You scored " + score + " out of " + total);
 
   //return false;
-  location.href = "mailchimpform.html";
+  location.href = "newForm.html";
 }
